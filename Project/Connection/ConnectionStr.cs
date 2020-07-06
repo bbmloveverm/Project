@@ -16,7 +16,7 @@ namespace Project.Connection
 
         public static void connectsql()
         {
-            strcon = "Data Source=DESKTOP-E8RQ441;Initial Catalog=Minimart;Persist Security Info=True;User ID=sa";
+            strcon = "Data Source=DESKTOP-E8RQ441;Initial Catalog=Minimart;Integrated Security=True";
         }
 
 

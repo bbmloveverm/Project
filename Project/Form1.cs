@@ -20,10 +20,22 @@ namespace Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ConnectionStr dt = new ConnectionStr();
-            MessageBox.Show(dt.ToString());
+            ConnectionStr.connectsql();
         }
 
-        
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if (pro_id == null)
+            {
+                MessageBox.Show("insert data");
+            }
+            else
+            {
+                ConnectionStr.executsql("insert into Tbl_Inventory(Product_ID,Product_Name,Product_Price,Product_Qty,Product_Type,Product_Unit) values ('" + pro_id.Text + "','" + pro_name.Text + "','" + pro_price.Text + "','" + pro_qty.Text + "','" + pro_type.Text + "','" + pro_unit.Text + "')");
+
+                MessageBox.Show(pro_id.Text);
+            }
+            
+        }
     }
 }

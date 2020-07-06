@@ -28,62 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.pro_id = new System.Windows.Forms.TextBox();
+            this.pro_name = new System.Windows.Forms.TextBox();
+            this.pro_price = new System.Windows.Forms.TextBox();
+            this.pro_qty = new System.Windows.Forms.TextBox();
+            this.pro_type = new System.Windows.Forms.TextBox();
+            this.pro_unit = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // pro_id
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 20);
-            this.textBox1.TabIndex = 0;
+            this.pro_id.Location = new System.Drawing.Point(235, 68);
+            this.pro_id.Name = "pro_id";
+            this.pro_id.Size = new System.Drawing.Size(188, 20);
+            this.pro_id.TabIndex = 0;
             // 
-            // textBox2
+            // pro_name
             // 
-            this.textBox2.Location = new System.Drawing.Point(235, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 20);
-            this.textBox2.TabIndex = 1;
+            this.pro_name.Location = new System.Drawing.Point(235, 100);
+            this.pro_name.Name = "pro_name";
+            this.pro_name.Size = new System.Drawing.Size(188, 20);
+            this.pro_name.TabIndex = 1;
             // 
-            // textBox3
+            // pro_price
             // 
-            this.textBox3.Location = new System.Drawing.Point(235, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(188, 20);
-            this.textBox3.TabIndex = 2;
+            this.pro_price.Location = new System.Drawing.Point(235, 136);
+            this.pro_price.Name = "pro_price";
+            this.pro_price.Size = new System.Drawing.Size(188, 20);
+            this.pro_price.TabIndex = 2;
             // 
-            // textBox4
+            // pro_qty
             // 
-            this.textBox4.Location = new System.Drawing.Point(235, 177);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(188, 20);
-            this.textBox4.TabIndex = 3;
+            this.pro_qty.Location = new System.Drawing.Point(235, 177);
+            this.pro_qty.Name = "pro_qty";
+            this.pro_qty.Size = new System.Drawing.Size(188, 20);
+            this.pro_qty.TabIndex = 3;
             // 
-            // textBox5
+            // pro_type
             // 
-            this.textBox5.Location = new System.Drawing.Point(235, 210);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(188, 20);
-            this.textBox5.TabIndex = 4;
+            this.pro_type.Location = new System.Drawing.Point(235, 210);
+            this.pro_type.Name = "pro_type";
+            this.pro_type.Size = new System.Drawing.Size(188, 20);
+            this.pro_type.TabIndex = 4;
             // 
-            // textBox6
+            // pro_unit
             // 
-            this.textBox6.Location = new System.Drawing.Point(235, 247);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(188, 20);
-            this.textBox6.TabIndex = 5;
+            this.pro_unit.Location = new System.Drawing.Point(235, 247);
+            this.pro_unit.Name = "pro_unit";
+            this.pro_unit.Size = new System.Drawing.Size(188, 20);
+            this.pro_unit.TabIndex = 5;
             // 
             // label1
             // 
@@ -139,33 +139,34 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "หน่วยนับสินค้า";
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.Location = new System.Drawing.Point(348, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "บันทึกข้อมูล";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_save.Location = new System.Drawing.Point(348, 289);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 12;
+            this.btn_save.Text = "บันทึกข้อมูล";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_save);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pro_unit);
+            this.Controls.Add(this.pro_type);
+            this.Controls.Add(this.pro_qty);
+            this.Controls.Add(this.pro_price);
+            this.Controls.Add(this.pro_name);
+            this.Controls.Add(this.pro_id);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -176,19 +177,19 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox pro_id;
+        private System.Windows.Forms.TextBox pro_name;
+        private System.Windows.Forms.TextBox pro_price;
+        private System.Windows.Forms.TextBox pro_qty;
+        private System.Windows.Forms.TextBox pro_type;
+        private System.Windows.Forms.TextBox pro_unit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_save;
     }
 }
 
