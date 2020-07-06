@@ -23,5 +23,7 @@ namespace Project
             ConnectionStr dt = new ConnectionStr();
             MessageBox.Show(dt.ToString());
         }
+
+        
     }
 }
