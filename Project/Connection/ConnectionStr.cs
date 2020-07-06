@@ -30,7 +30,6 @@ namespace Project.Connection
             {
                 objConn.ConnectionString = strcon;
                 objConn.Open();
-
                 dtAdapter = new SqlDataAdapter(sql,objConn);
                 dtAdapter.Fill(dt);
                 objConn.Close();
